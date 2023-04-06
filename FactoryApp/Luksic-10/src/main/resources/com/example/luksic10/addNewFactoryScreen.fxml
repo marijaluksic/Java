@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.luksic10.AddNewFactoryController"><fx:include source="menuBar.fxml" />
+   <GridPane prefHeight="479.0" prefWidth="603.0" AnchorPane.topAnchor="25.0">
+      <columnConstraints>
+         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      </columnConstraints>
+      <rowConstraints>
+         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+      <children>
+         <Label text="Adding new Factory" GridPane.columnSpan="2" GridPane.halignment="CENTER">
+            <font>
+               <Font name="System Bold" size="18.0" />
+            </font>
+         </Label>
+         <Label text="Name" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+            <padding>
+               <Insets right="5.0" />
+            </padding>
+         </Label>
+         <Label text="Street" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+            <padding>
+               <Insets right="5.0" />
+            </padding>
+         </Label>
+         <Label text="Items" GridPane.halignment="RIGHT" GridPane.rowIndex="6">
+            <padding>
+               <Insets right="5.0" />
+            </padding>
+         </Label>
+         <Button mnemonicParsing="false" onAction="#onSaveButtonClick" text="Save Factory" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="9" />
+         <TextField fx:id="factoryNameTextField" maxWidth="290.0" prefHeight="26.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         <TextField fx:id="factoryStreetTextField" maxWidth="290.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         <ListView fx:id="itemsListView" maxWidth="290.0" prefHeight="106.0" prefWidth="302.0" GridPane.columnIndex="1" GridPane.rowIndex="6" GridPane.rowSpan="3" />
+         <Label text="House number" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
+            <GridPane.margin>
+               <Insets right="5.0" />
+            </GridPane.margin>
+         </Label>
+         <TextField fx:id="factoryHouseNumberTextField" maxWidth="290.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+         <Label text="City" GridPane.halignment="RIGHT" GridPane.rowIndex="4">
+            <GridPane.margin>
+               <Insets right="5.0" />
+            </GridPane.margin>
+         </Label>
+         <TextField fx:id="factoryCityTextField" maxWidth="290.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+         <TextField fx:id="postalCodeTextField" maxWidth="290.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+         <Label text="Postal code" GridPane.halignment="RIGHT" GridPane.rowIndex="5">
+            <GridPane.margin>
+               <Insets right="5.0" />
+            </GridPane.margin>
+         </Label>
+      </children>
+   </GridPane>
+
+</AnchorPane>
